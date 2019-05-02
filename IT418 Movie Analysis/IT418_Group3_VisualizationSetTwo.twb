@@ -1,0 +1,3195 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.19.0123.2221                               -->
+<workbook original-version='18.1' source-build='2018.3.3 (20183.19.0123.2221)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='GenreRating (GenreRating)' inline='true' name='federated.149jgb10c2y6921cbh2bj1h27638' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='GenreRating' name='excel-direct.1c67ms90al800k1cfbkk81qw53zp'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/tunji/GenreRating.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1c67ms90al800k1cfbkk81qw53zp' name='GenreRating' table='[GenreRating$]' type='table'>
+          <columns gridOrigin='A1:K1690:no:A1:K1690:0' header='yes' outcome='2'>
+            <column datatype='string' name='Title' ordinal='0' />
+            <column datatype='string' name='Studio' ordinal='1' />
+            <column datatype='integer' name='TotalGross' ordinal='2' />
+            <column datatype='integer' name='TotalTheaters' ordinal='3' />
+            <column datatype='integer' name='OpeningGross' ordinal='4' />
+            <column datatype='integer' name='OpeningTheaters' ordinal='5' />
+            <column datatype='date' name='OpeningDate' ordinal='6' />
+            <column datatype='string' name='Director' ordinal='7' />
+            <column datatype='string' name='MainActor' ordinal='8' />
+            <column datatype='real' name='Rating' ordinal='9' />
+            <column datatype='string' name='Genre' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[GenreRating]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Studio</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Studio]</local-name>
+            <parent-name>[GenreRating]</parent-name>
+            <remote-alias>Studio</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalGross</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalGross]</local-name>
+            <parent-name>[GenreRating]</parent-name>
+            <remote-alias>TotalGross</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalTheaters</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalTheaters]</local-name>
+            <parent-name>[GenreRating]</parent-name>
+            <remote-alias>TotalTheaters</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OpeningGross</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OpeningGross]</local-name>
+            <parent-name>[GenreRating]</parent-name>
+            <remote-alias>OpeningGross</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OpeningTheaters</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OpeningTheaters]</local-name>
+            <parent-name>[GenreRating]</parent-name>
+            <remote-alias>OpeningTheaters</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OpeningDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[OpeningDate]</local-name>
+            <parent-name>[GenreRating]</parent-name>
+            <remote-alias>OpeningDate</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Director</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Director]</local-name>
+            <parent-name>[GenreRating]</parent-name>
+            <remote-alias>Director</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MainActor</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MainActor]</local-name>
+            <parent-name>[GenreRating]</parent-name>
+            <remote-alias>MainActor</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rating]</local-name>
+            <parent-name>[GenreRating]</parent-name>
+            <remote-alias>Rating</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Genre</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Genre]</local-name>
+            <parent-name>[GenreRating]</parent-name>
+            <remote-alias>Genre</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[GenreRating]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K1690:no:A1:K1690:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+      <column caption='Main Actor' datatype='string' name='[MainActor]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Opening Date' datatype='date' name='[OpeningDate]' role='dimension' type='ordinal' />
+      <column caption='Opening Gross' datatype='integer' name='[OpeningGross]' role='measure' type='quantitative' />
+      <column caption='Opening Theaters' datatype='integer' name='[OpeningTheaters]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Rating]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Studio]' role='dimension' type='nominal' />
+      <column caption='Total Gross' datatype='integer' name='[TotalGross]' role='measure' type='quantitative' />
+      <column caption='Total Theaters' datatype='integer' name='[TotalTheaters]' role='measure' type='quantitative' />
+      <column-instance column='[Rating]' derivation='Avg' name='[avg:Rating:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TotalGross]' derivation='Avg' name='[avg:TotalGross:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[OpeningGross]' derivation='Count' name='[cnt:OpeningGross:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[OpeningTheaters]' derivation='Count' name='[cnt:OpeningTheaters:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+      <column-instance column='[MainActor]' derivation='None' name='[none:MainActor:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Studio]' derivation='None' name='[none:Studio:nk]' pivot='key' type='nominal' />
+      <column-instance column='[OpeningGross]' derivation='Sum' name='[sum:OpeningGross:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Rating]' derivation='Sum' name='[sum:Rating:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TotalGross]' derivation='Sum' name='[sum:TotalGross:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.500763' measure-ordering='alphabetic' measure-percentage='0.499237' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:MainActor:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot; &#10;Anika Noni Rose&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot; &#10;Gaspard Ulliel&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot; &#10;Jesse Eisenberg&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot; &#10;Liam Neeson&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot; &#10;Nicole Kidman&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot; &#10;Sarah Jessica Parker&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot; Dan Aykroyd&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot; Will Ferrell&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Alec Baldwin&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Andy Samberg&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Barry Watson&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Brandon Routh&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Chaney Kley&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Christine Cavanaugh&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Dane DeHaan&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Derek Richardson&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Eddie Redmayne&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Ethan Hawke&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;George Clooney&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Henry Cavill&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;James Franco&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Jay Chandrasekhar&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Jessica Biel&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;John Leguizamo&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Jude Law&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Kate Hudson&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Kim Basinger&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Liam Neeson&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mark Rylance&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mia Wasikowska&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Nat Wolff&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Orlando Bloom&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Rachel McAdams&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Robert Redford&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Sanaa Lathan&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Shawn Wayans&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;T.J. Miller&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Tom Kenny&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Ward Horton&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot; &#10;Cameron Diaz&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot; &#10;Ed Asner&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot; &#10;James McAvoy&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot; &#10;Mel Gibson&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot; Katherine Heigl&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot; Robert De Niro&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot; Timothy Olyphant&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Adam Sandler&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Amanda Seyfried&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Antonio Banderas&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Billy Bob Thornton&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Carmen Electra&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Chris Hemsworth&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cuba Gooding Jr.&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Debi Derryberry&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Drew Barrymore&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Emily Blunt&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Freddie Prinze Jr.&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Halle Berry&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Jack Black&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Jason Biggs&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Jeremy Irvine&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Joey King&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Jordana Brewster&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Justin Long&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Kenan Thompson&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Laura Linney&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Luke Evans&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Matthew McConaughey&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Milla Jovovich&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Nicole Kidman&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Paul Walker&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Richard Dreyfuss&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Sacha Baron Cohen&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Sean Penn&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Steve Zahn&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Tim Robbins&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Val Kilmer&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Zach Braff&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot; &#10;Amanda Seyfried&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot; &#10;Claire Danes&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot; &#10;Emily Browning&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot; &#10;Jeff Bridges&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot; &#10;Miley Cyrus&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot; Kristen Bell&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot; Rose McGowan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot; Toni Myers&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Adrien Brody&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Amy Landecker&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ashley Judd&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Blanchard Ryan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Catherine Zeta-Jones&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Chris Pine&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Dan Castellaneta&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Denis Leary&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ed Helms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Emma Stone&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Gena Rowlands&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Heath Ledger&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Jacob Tremblay&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Jason Segel&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Jesse Bradford&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;John Cusack&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Josh Hutcherson&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Karen Gillan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Kevin James&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Levi Miller&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Maggie Smith&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Melissa Joan Hart&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Monica Calhoun&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Olivia Cooke&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Pierce Brosnan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Robert De Niro&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sam Neill&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Shad Moss&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sullivan Stapleton&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Tom Hanks&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Vin Diesel&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Zoey Deutch&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot; &#10;Ben Stiller&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot; &#10;Dennis Quaid&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot; &#10;Hayden Christensen&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot; &#10;Mandy Moore&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot; &#10;Shia LaBeouf&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot; &#10;Zac Efron&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot; John Travolta&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot; Patrick Fabian&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Alex Veadov&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Anna Kendrick&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Ben Whishaw&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Bridget Fonda&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Charlize Theron&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Clint Eastwood&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Daniel Radcliffe&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Diane Keaton&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Elijah Wood&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Felicity Jones&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Ginnifer Goodwin&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Hugh Grant&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;James Spader&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Jeffrey Donovan&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Jet Li&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Johnny Knoxville&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Julianna Margulies&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Kathryn McCormick&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Kristen Bell&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Lin Shaye&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Martin Lawrence&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Michael J. Fox&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Nathan Fillion&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Parminder Nagra&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Raphaël Lacoste&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Rupert Everett&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sarah Michelle Gellar&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Simon Pegg&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Taylor Kitsch&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Tommy Lee Jones&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Will Ferrell&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot; &#10;Daniel Craig&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot; &#10;George Clooney&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot; &#10;Liv Tyler&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot; &#10;Noah Ringer&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot; &#10;Sean Penn&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot; &#10;Will Smith&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot; Anna Faris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot; Jessica Alba&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Alek Skarlatos&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Andy Serkis&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Ben Affleck&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Breckin Meyer&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Channing Tatum&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Christopher Lloyd&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Daniel Craig&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Dermot Mulroney&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Edward Norton&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Eugenio Derbez&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Gerard Butler&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Hilary Duff&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;James Marsden&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Jay Hernandez&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Jessica Chastain&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;John Lloyd Young&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Judi Dench&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Kate Winslet&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Kimberly Elise&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Liam Payne&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mark Wahlberg&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Michael B. Jordan&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Natalie Dormer&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Orlando Jones&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Radha Mitchell&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Robin Williams&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sandra Bullock&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Shelley Hennig&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Taraji P. Henson&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Tom McGrath&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Wendi McLendon-Covey&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot; &#10;Amber Tamblyn&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot; &#10;Kristen Stewart&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot; &#10;Milla Jovovich&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot; &#10;Russell Crowe&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot; &#10;Vince Vaughn&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot; Columbus Short&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot; Emma Roberts&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot; Jeff Bridges&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Al Pacino&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Amy Poehler&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Ashton Kutcher&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Blayne Weaver&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Cedric the Entertainer&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Chris Pratt&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Dan Fogler&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Denise Richards&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Ed Speleers&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Emma Thompson&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Gene Hackman&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Heather Donahue&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Jaden Smith&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Jason Statham&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Jesse Eisenberg&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;John David Washington&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Josh Lucas&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Karl Urban&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Kevin Kline&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Liam Aiken&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mandy Moore&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Melissa McCarthy&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Morgan Freeman&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Olivia DeJonge&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Piper Perabo&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Robert Downey Jr.&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sam Rockwell&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Shailene Woodley&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Suraj Sharma&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Tom Hardy&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Vince Vaughn&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot; &#10;Dwayne Johnson&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot; &#10;Jackie Chan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot; &#10;Kate Winslet&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot; &#10;Robert Carlyle&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot; Brendan Fraser&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot; Matthew McConaughey&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot; Sylvester Stallone&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Aaron Paul&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Alyson Hannigan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Anthony Hopkins&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Bill Murray&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Camilla Belle&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Chris Brown&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Constance Wu&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;David Oyelowo&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Donnie Wahlberg&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Emilia Clarke&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Fred Willard&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Hailee Steinfeld&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Ioan Gruffudd&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Jared Gilman&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Jennifer Lopez&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Jodi Carlisle&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Jonathan Breck&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Justin Bieber&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kelly Macdonald&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kyrie Irving&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Lucas Till&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Matthew Broderick&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Mila Kunis&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Nick Cannon&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Paul Hogan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Renée Zellweger&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Ryan Potter&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Sean Connery&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Steve Irwin&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Thomas Mann&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Tye Sheridan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Yun-Fat Chow&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot; &#10;Aaron Johnson&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot; &#10;Edward Norton&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot; &#10;Jamie Foxx&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot; &#10;Katie Featherston&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot; &#10;Meryl Streep&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot; Channing Tatum&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot; Robert Downey Jr.&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot; Tina Fey&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Adam Scott&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Amandla Stenberg&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Anya Taylor-Joy&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Billy Crudup&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Cary Elwes&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Chris Kattan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;D.B. Sweeney&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Demetrius Shipp Jr.&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Dwayne \&quot;The Rock\&quot;&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Emily Browning&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Gal Gadot&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Hank Azaria&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Jack Nicholson&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Jason Lee&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Jeremy Renner&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;John C. Reilly&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Joseph Fiennes&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Justin Theroux&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Kevin Bacon&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Lee Pace&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Luke Wilson&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Meg Ryan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Minka Kelly&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Noah Schnapp&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Paula Patton&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Richard Gere&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Saffron Burrows&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Seann William Scott&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Steven Seagal&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Tobey Maguire&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Vera Farmiga&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Zachary Gordon&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot; &#10;Brad Pitt&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot; &#10;Diane Lane&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot; &#10;Isla Fisher&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot; &#10;Kate Beckinsale&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot; &#10;Matt Dillon&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot; &#10;Reese Witherspoon&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot; &#10;Steve Carell&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Aaliyah&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;AlexSandra Wright&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Anthony Anderson&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Beyoncé&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Bryan Cranston&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Chloe Csengery&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Colin Hanks&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;David Arquette&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Don Cheadle&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Ellen DeGeneres&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Franka Potente&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Guy Pearce&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Ice Cube&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Jamie Lee Curtis&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Jennifer Garner&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Jim Sturgess&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Jon Heder&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Juliette Binoche&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Keira Knightley&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kumail Nanjiani&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Louis C.K.&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Matt Lanter&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Mickey Rourke&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Nicholas DAgosto&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Patton Oswalt&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Reese Witherspoon&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Ryan Gosling&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Scott Glenn&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Steve Carell&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Thomas Horn&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Trey Parker&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Woody Harrelson&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot; &#10;Andy Samberg&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot; &#10;Dakota Fanning&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot; &#10;Emma Stone&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot; &#10;Jennifer Aniston&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;  &#10;Morgan Freeman&#10;Russell Crowe&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot; Kristen Stewart&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot; Sacha Baron Cohen&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot; Virginia Madsen&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Albert Brooks&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Amy Schumer&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Aulii Cravalho&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Brad Pitt&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Chad Michael Murray&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Chris Rock&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Dana Carvey&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Dennis Quaid&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Eddie Griffin&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Eric Bana&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Genndy Tartakovsky&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Helen McCrory&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Jake Gyllenhaal&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Jason Sudeikis&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Jesse Metcalfe&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;John Goodman&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Joshua Jackson&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Kate Beckinsale&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Kevin Spacey&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Liam Hemsworth&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mark Addy&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Meryl Streep&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Morris Chestnut&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Olivia Wilde&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Priscilla C. Shirer&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Robert Englund&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Sam Worthington&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Shameik Moore&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Susan Sarandon&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Tom Hiddleston&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Viola Davis&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot; &#10;Denzel Washington&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot; &#10;Jonah Hill&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot; &#10;Mark Wahlberg&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot; &#10;Shoshana Bush&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot; Ben Stiller&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot; Hilary Swank&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot; Peter Dinklage&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot; Zac Efron&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Alexa PenaVega&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;AnnaSophia Robb&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Benedict Cumberbatch&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Britney Spears&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Cher&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Clive Owen&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Dave Goelz&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Diane Lane&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Elizabeth Reaser&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Fernanda Andrade&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Glenn Close&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Hugh Jackman&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;James Van Der Beek&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Jeffrey Wright&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Jim Carrey&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Johny Depp&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Julianne Hough&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Katie Featherston&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Kristen Connolly&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Lindsay Lohan&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mary Elizabeth Winstead&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Michael Keaton&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Neil Patrick Harris&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Patricia Arquette&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Ray Romano&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Rupert Friend&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sarah Polley&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Simon Rex&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Ted Levine&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Toni Collette&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Will Smith&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot; &#10;Bill Hader&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot; &#10;Joseph Gordon-Levitt&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot; &#10;Rachel McAdams&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot; &#10;Skandar Keynes&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot; &#10;Zachary Gordon&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot; Dev Patel&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot; Hugh Grant&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot; Martin Lawrence&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Alexander Skarsgård&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Anne Hathaway&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Benicio Del Toro&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Brittany Murphy&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Chevy Chase&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Colin Farrell&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Daveigh Chase&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Diogo Morgado&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Ellar Coltrane&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Fionn Whitehead&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Greg Cipes&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Hugo Weaving&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Jamie Bell&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Jenn Proske&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Jim Caviezel&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Jon Favreau&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Julianne Moore&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Katie Leung&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Kristen Stewart&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;LL Cool J&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Matilda Anna Ingrid Lutz&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Michael Moore&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Neve Campbell&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Patrick Stewart&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Ray Winstone&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Russell Brand&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Scarlett Johansson&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Stellan Skarsgård&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Teo Halm&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Tony Goldwyn&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;William Shatner&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot; &#10;Brendan Fraser&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot; &#10;Steve Martin&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot; Diane Lane&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot; Jack Black&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot; Kate Hudson&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot; Matthew Broderick&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot; Richard Gere&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Aaron Eckhart&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Alicia Vikander&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Anthony Gonzalez&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Bill Hader&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cameron Diaz&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Chloë Grace Moretz&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Colin ODonoghue&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;David Duchovny&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Donald Sutherland&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Ellen Page&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Frankie Muniz&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Gwyneth Paltrow&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Idris Elba&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Janet Jackson&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Jennifer Lawrence&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Joaquin Phoenix&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Jonah Hill&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Juliette Lewis&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Keisha Castle-Hughes&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kurt Russell&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Lucas Black&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Matt Passmore&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Mike Myers&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Nicholas Hoult&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Paul Giamatti&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Regina Hall&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Ryan Phillippe&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Scott Shepherd&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Steve Harvey&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Thomas Jane&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Ty Burrell&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Ylan Noel&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot; &#10;Bruce Willis&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot; &#10;Katherine Heigl&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot; &#10;Robert De Niro&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot; Dwayne Johnson&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot; James Marsden&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot; Max Records&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot; The Spierig Brothers&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Aaron Taylor-Johnson&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Amanda Bynes&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Anthony LaPaglia&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Bill Skarsgård&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Carlos Alazraqui&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Chris Evans&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Craig T. Nelson&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;David Spade&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Douglas Smith&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Emily Bergl&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Freddie Highmore&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Haley Joel Osment&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;J. Michael Finley&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Jason Bateman&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Jennifer Morrison&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Jodie Foster&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Jordan Fry&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Justin Chambers&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kelsey Asbille&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Lake Bell&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Lucy Hale&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Matthew Lillard&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Miles Teller&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Nicolas Cage&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Paul Rudd&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Richard Armitage&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Ryan Reynolds&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Sean Hayes&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Steve Martin&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Tim Allen&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Tyler Perry&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Zac Efron&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot; &#10;Anthony Hopkins&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot; &#10;Jim Carrey&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot; &#10;Lizzy Caplan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot; &#10;Owen Wilson&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot; &#10;Seth Rogen&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot; &#10;William Moseley&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot; Danny Trejo&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot; George Clooney&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Alex Kendrick&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Angelina Jolie&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ben Kingsley&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Brendan Fraser&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Charlie Hunnam&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Chyler Leigh&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Daniel Day-Lewis&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Dev Patel&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Elayn J. Taylor&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Evan Rachel Wood&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Gerardo Taracena&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Hilary Swank&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;James McAvoy&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Jean Dujardin&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Jessica Rothe&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;John Travolta&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Julia Roberts&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Katherine McNamara&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Kirsten Dunst&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Lily Collins&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Marlon Wayans&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Michael Douglas&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Natalie Portman&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;OShea Jackson Jr.&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ralph Fiennes&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ron Perlman&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Saoirse Ronan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Shia LaBeouf&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Taron Egerton&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tom Selleck&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Wesley Snipes&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot; &#10;Angelina Jolie&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot; &#10;Jennifer Carpenter&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot; &#10;Leonardo DiCaprio&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot; &#10;Nicolas Cage&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot; &#10;Samuel L. Jackson&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot; &#10;Will Ferrell&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot; Dakota Fanning&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot; Freddie Highmore&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Alden Ehrenreich&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Andrew Garfield&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Barbra Streisand&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Bradley Cooper&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Chadwick Boseman&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Christian Bale&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Dane Cook&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Denzel Washington&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Eddie Murphy&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Esme Creed-Miles&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Geoffrey Rush&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Helen Mirren&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;James Corden&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Jay Baruchel&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Jessica Alba&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;John Krasinski&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Jovan Adepo&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Kate Bosworth&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Kiefer Sutherland&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Liam N eeson&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mark Ruffalo&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Method Man&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Naomi Watts&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Omarion&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Queen Latifah&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Robert Pattinson&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Samuel L. Jackson&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sharlto Copley&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sylvester Stallone&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Tom Holland&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Vivica A. Fox&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot; &#10;Adam Sandler&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot; &#10;Elijah Wood&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot; &#10;Kiefer Sutherland&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot; &#10;Michael Cera&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot; &#10;Robin Williams&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot; Chris Cooper&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot; Jamie Lee Curtis&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot; Tobin Bell&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Adewale Akinnuoye-Agbaje&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Amber Tamblyn&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Arnold Schwarzenegger&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Billy Crystal&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Casey Affleck&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Chris Messina&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Daisy Ridley&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Demi Lovato&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Dwayne Johnson&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Eminem&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Gary Oldman&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Harrison Ford&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Jack OConnell&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Jason Mewes&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Jeremy Sumpter&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;John Cena&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Joseph Gordon-Levitt&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Justin Timberlake&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Kevin Costner&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Leonardo DiCaprio&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mackenzie Foy&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Megan Fox&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mitchel Musso&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Noomi Rapace&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Phil Vischer&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Ricky Gervais&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Sally Hawkins&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Seth MacFarlane&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Steven Yeun&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Tobin Bell&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Vicky Krieps&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Ziyi Zhang&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot; &#10;Diane Keaton&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot; &#10;Julia Roberts&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot; &#10;Rain&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot; &#10;Sprague Grayden&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot; Bobby Campo&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot; Ice Cube&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot; Matt Damon&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;A.J. Cook&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Alexandra Daddario&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Ansel Elgort&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Benjamin Walker&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Bruce Willis&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Chiwetel Ejiofor&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Colin Firth&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;David Alan Basche&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;DJ Qualls&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Elle Fanning&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Frank Grillo&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Greg Kinnear&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Ian McKellen&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Jamie Foxx&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Jennifer Aniston&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Jim Cummings&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Jon Hamm&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Julie Andrews&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Keanu Reeves&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Kristen Wiig&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Logan Lerman&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Matt Damon&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Michelle Williams&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Nia Vardalos&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Patrick Wilson&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Reese Mishler&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Russell Crowe&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Scott Eastwood&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Stephen Dunham&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Teresa Palmer&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Travis Fimmel&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Winona Ryder&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot; &#10;Harrison Ford&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot; &#10;Malin Åkerman&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot; &#10;Patrick Dempsey&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot; &#10;Sharlto Copley&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot; &#10;Woody Harrelson&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot; Ben Affleck&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot; Delroy Lindo&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot; Jim Carrey&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Alex Pettyfer&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Anna Faris&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Ben Stiller&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Brenton Thwaites&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Charlie Rowe&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Cillian Murphy&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Daniel Kaluuya&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Devon Sawa&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Eli Marienthal&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Ewan McGregor&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Gina Philips&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Hugh Bonneville&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;James Ransone&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Jeff Bridges&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Jessica Simpson&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Johnny Depp&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Julia Stiles&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Kathleen Turner&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Kodi Smit-McPhee&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Lily James&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Martin Freeman&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Michael Fassbender&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Natasha Calis&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Owen Wilson&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Rami Malek&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Rowan Atkinson&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Sarah Jessica Parker&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Sigourney Weaver&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Taye Diggs&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Tom Wilkinson&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Will Arnett&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot; &#10;Alison Lohman&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot; &#10;Christian Bale&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot; &#10;Emile Hirsch&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot; &#10;Jason Statham&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot; &#10;Kirk Cameron&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot; &#10;Ron Perlman&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot; &#10;Tom Hanks&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot; Mike Myers&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Adrian Grenier&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Amy Adams&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Asa Butterfield&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Blake Lively&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Cate Blanchett&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Chris ODonnell&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Dakota Johnson&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Demián Bichir&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Dylan OBrien&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Emma Roberts&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Geena Davis&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Hayden Christensen&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Jackie Chan&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Jason Momoa&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Jerry Seinfeld&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;John Cho&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Josh Hartnett&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Kal Penn&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Kevin Hart&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Leslie Mann&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mae Whitman&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mel Gibson&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Molly Shannon&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Olivia Colman&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Philip Seymour Hoffman&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Rob Schneider&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Salma Hayek&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Seth Rogen&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Storm Reid&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Tom Cruise&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Viggo Mortensen&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Zoe Saldana&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.149jgb10c2y6921cbh2bj1h27638].[avg:Rating:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.149jgb10c2y6921cbh2bj1h27638].[cnt:OpeningGross:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.149jgb10c2y6921cbh2bj1h27638].[cnt:OpeningTheaters:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.149jgb10c2y6921cbh2bj1h27638].[avg:TotalGross:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.149jgb10c2y6921cbh2bj1h27638].[sum:OpeningGross:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.149jgb10c2y6921cbh2bj1h27638].[sum:Rating:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.149jgb10c2y6921cbh2bj1h27638].[sum:TotalGross:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Genre:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Fantasy&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Action&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Crime&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Mystery&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;History&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Documentary&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Western&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Adventure&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;TV Movie&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Drama&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Romance&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Science Fiction&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;War&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Horror&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Family&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Animation&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Thriller&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Music&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Comedy&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Studio:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;CBS&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;SonR&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Wein.&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BV&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;MGM&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Sum.&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;NM&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;USA&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;WB&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Uni.&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;ENTMP&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;RAtt.&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Dim.&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;ParV&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;WIP&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Art.&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;ORF&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;W/Dim.&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Par.&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Rela.&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Studio 8&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;A24&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;MGM/W&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;TriS&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;IFC&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;NL&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BG&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Over.&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;FoxA&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;WB (NL)&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;FD&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;FoxS&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;LG/S&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;SPC&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Lions&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;STX&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;PNT&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Sony&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;YFG&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;LGF&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BST&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SGem&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Fox&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mira.&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;UA&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Gold.&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;DW&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Focus&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;P/DW&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Annapurna&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Rog.&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GenreRating (GenreRating)' name='federated.149jgb10c2y6921cbh2bj1h27638' />
+          </datasources>
+          <datasource-dependencies datasource='federated.149jgb10c2y6921cbh2bj1h27638'>
+            <column caption='Opening Theaters' datatype='integer' name='[OpeningTheaters]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Rating]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Studio]' role='dimension' type='nominal' />
+            <column caption='Total Gross' datatype='integer' name='[TotalGross]' role='measure' type='quantitative' />
+            <column-instance column='[Rating]' derivation='Avg' name='[avg:Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[OpeningTheaters]' derivation='Count' name='[cnt:OpeningTheaters:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Studio]' derivation='None' name='[none:Studio:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TotalGross]' derivation='Sum' name='[sum:TotalGross:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.149jgb10c2y6921cbh2bj1h27638].[sum:TotalGross:qk]' included-values='in-range'>
+            <min>3448719362</min>
+            <max>25004752802</max>
+          </filter>
+          <slices>
+            <column>[federated.149jgb10c2y6921cbh2bj1h27638].[sum:TotalGross:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.149jgb10c2y6921cbh2bj1h27638].[sum:TotalGross:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.149jgb10c2y6921cbh2bj1h27638].[sum:TotalGross:qk]' num-steps='10' type='interpolated' />
+            <encoding attr='size-bar' field='[federated.149jgb10c2y6921cbh2bj1h27638].[avg:Rating:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.149jgb10c2y6921cbh2bj1h27638].[avg:Rating:qk]' />
+              <color column='[federated.149jgb10c2y6921cbh2bj1h27638].[avg:Rating:qk]' />
+              <text column='[federated.149jgb10c2y6921cbh2bj1h27638].[none:Studio:nk]' />
+              <lod column='[federated.149jgb10c2y6921cbh2bj1h27638].[cnt:OpeningTheaters:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GenreRating (GenreRating)' name='federated.149jgb10c2y6921cbh2bj1h27638' />
+          </datasources>
+          <datasource-dependencies datasource='federated.149jgb10c2y6921cbh2bj1h27638'>
+            <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Studio]' role='dimension' type='nominal' />
+            <column caption='Total Gross' datatype='integer' name='[TotalGross]' role='measure' type='quantitative' />
+            <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Studio]' derivation='None' name='[none:Studio:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TotalGross]' derivation='Sum' name='[sum:TotalGross:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.149jgb10c2y6921cbh2bj1h27638].[none:Studio:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.149jgb10c2y6921cbh2bj1h27638].[sum:TotalGross:qk]</rows>
+        <cols>([federated.149jgb10c2y6921cbh2bj1h27638].[none:Genre:nk] / [federated.149jgb10c2y6921cbh2bj1h27638].[none:Studio:nk])</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.149jgb10c2y6921cbh2bj1h27638].[avg:Rating:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.149jgb10c2y6921cbh2bj1h27638].[:Measure Names]</field>
+            <field>[federated.149jgb10c2y6921cbh2bj1h27638].[avg:Rating:qk]</field>
+            <field>[federated.149jgb10c2y6921cbh2bj1h27638].[cnt:OpeningGross:qk]</field>
+            <field>[federated.149jgb10c2y6921cbh2bj1h27638].[none:Director:nk]</field>
+            <field>[federated.149jgb10c2y6921cbh2bj1h27638].[none:Genre:nk]</field>
+            <field>[federated.149jgb10c2y6921cbh2bj1h27638].[none:MainActor:nk]</field>
+            <field>[federated.149jgb10c2y6921cbh2bj1h27638].[none:Studio:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{10259770-7FE8-445E-B78C-AC9438BA4C61}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.149jgb10c2y6921cbh2bj1h27638].[none:Studio:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.149jgb10c2y6921cbh2bj1h27638].[none:Studio:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AA7E965D-1A8E-40BD-81DB-588A74422EB9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAHUUlEQVR4nO3dW28UhwGG4W9mdna93sVeGxsfwbUTEwKEQ4hEEyhqUKqquU6lquptL/tv
+      +id6XfWiykWr1kpBBYU0gYRUgkBtY7Pgw/q4p5leELk4qolawQ74e5+rGRakT8DrGc8aE6Rp
+      mgowFWY9AMgSAcBa7umTdpLo8epGVltsFfKxWkHWK3wU45xaSSLpOwFUl9f1k9/8NpNRzi5f
+      ekuf5+OsZ9j45dkJfb20KolbIJgjAFgjAFjbM4AfnXlN7587qo8un9HEcJ9OTI1Ikn58brpj
+      49wEkt47ckiS9KvTU8pHod49PKiJSlk/fX1MH7w2qpEDxWxH7iOtZuPZV4Cv7i1qq97Uo9UN
+      jQ70qlTMq91KOrXPTiopDKRKV14P1rY0XC4qF4YKA+ne6rqWt+qKQy7az036jCtAFIYaqJS0
+      3WgpjiI1mi2dnh7T53fmOznRzuPNut4ePahr84803lvSRrMlSerryqudpIojAnie9g4gCjVY
+      KWugt6RU0jcLSzoxOaKVta0OzvMzV9vUVN8BrW43daS3pLnahgIFqhQLOthdUBDwhsHzFDz9
+      tUALj2u8D5AB3gfoLN4HAL5FALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBG
+      ALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBG
+      ALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBGALBG
+      ALBGALBGALBGALCWy3oApFKc07tHBrOeYSMK/vNxf1cAhUKs9y+c7Pggd8NjA/rDwlLWM2xM
+      HiztHO8KoNFsa+b2bMcHuYt7uqUg6xWe+BwA1gjgJdfcWFd9dTnrGfvWngH0lbt2rspRGOqd
+      6TFNDfcpDAOdf2NcF09MqLsQd2imj8W/z+jh9U80/9ePlSaJVu98pfrKY8395Y+an/lY9ZUl
+      Pbz+idI00d3f/06t7S1VP72iNEmynv5K2jOAY+ODisInL//s3LS+/FdVW42WuuKc2u1EMzfv
+      abPe7NhQF2G+oMEz5xUVi0qaDaXttsIop/43T2vkvcta/voLSVJzraau/gFtP1pU0mwqCLmY
+      /z++93ctCgNtN1sqd+V1cuKQJOmN8UFdPD6hQsxT1Oettbmu6o2rKh4cUn11WcWB4adeDRQE
+      gQqVfi19+Zn6j5/RVnVBUVdXZntfdd8bQJKmKsSRFlfWn/yCINDt2apmbt1Tvdl64QPd5LrL
+      Gjx7Xj2T09pcnFP38KjSJNHjm59q4cqf1TN5VKWRw1q9c1v5Sr825u+re2gs69mvrD0/hNc2
+      67pw/IjuLCzrs7sLunxqStuNlhqttqq1zU5utDJw6h1JUtJsSqkURDmVD0+qfHhSkhQEgdI0
+      1dFf/FpBEGjiw59nOfeVt2cAN+8/3HU++6i2c3zv4cqLW2QuCJ48ekjDQJWjJ3bO/9vP+e4x
+      /nfcxL+kwiinMOKP50Xj0QGsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsEQCsEQCsEQCsEQCs8a+uYefkUK/GKwVJBABDK/VtLWx++43eMt4CZIoAYI0A
+      YGulWiUA+Go3WwQAX33DQwQAX2EYEgC8EQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs7fru0IU40qVTk1ltsXVy4pAO
+      RVmv8BGFwc7xrgDqaaq/rWx0fJC70tqWFpJG1jNsnBk7sHPMLRCsEQCsEcBLpr5WU5qmatXr
+      atXru17bXl3JaNX+tWcAl14f1dnxAeWjUD/8wZDeHh9Q7qlPHvBizN24pjRJVHswq7UHs1pb
+      fKD5G9fUbjbU3NrMet6+s2cA9VZb5UKsrjinfC5SnOMxRaelaarZ61dUmZhU9fYtLd+/m/Wk
+      feeZt0BfPFjSW6P9ndoCSUEYKk1TtZsNhXGs8qFh5QpdSrMetk89M4DadkP5KFIchSrGOV2Y
+      GtFYpdSpbZYGj76p+1dntPGoqp7hMRV7+xRGkboO9KhY6VerXtfirX9kPXPf2PO/Sb36zaIk
+      6U//nOvYGEjlwSGVB4d2zgemj0mS+iamdn5s6Pipju/ar3gKBGsEAGsEAGsEAGsEAGsEAGt7
+      PgYF9qvxAyX1F5/81ScA2Nlq11VrPfm6Km6BYI0AYI0AYI0AYGtxdo4A4KtvcIAA4CsXxwQA
+      X+urNQKAr56+CgHAGwHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHA
+      GgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHA
+      GgHAGgHAGgHAWu7pk0IU6eLUSFZbbB0bqmgoaWU9w0Zvoag4CiRJ/wZoyZtUYGSrfgAAAABJ
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
